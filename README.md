@@ -1,4 +1,4 @@
-#Nasa Astronomy Picture of the Day
+# Nasa Astronomy Picture of the Day
 
 A single page javascript application that uses vanilla JS and Axios to display the Astronomy Picture of the Day from the Nasa API.
 I added a little bit of Bootsrap for styling.
