@@ -7,7 +7,11 @@ const APoD = () => {
     .then(res => {
       // Copyright
       const copyright = res.data.copyright;
-      const copyrightOutput = `<p id="jsCopyright" >Author: ${copyright}</p>`;
+      let copyrightOutput = `<p id="jsCopyright" >Author: ${copyright}</p>`;
+
+      if (copyright === undefined) {
+        copyrightOutput = `<p id="jsCopyright" >Author: N/A </p>`;
+      }
 
       // Date
       const date = res.data.date;
