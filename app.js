@@ -1,9 +1,6 @@
 // Making a request to APoD API
 const APoD = () => {
-  axios
-    .get(
-      "https://api.nasa.gov/planetary/apod?api_key=Pf1VEatEAan8E7Z5KlsrXYRrqhYRlee1tkapvCzJ"
-    )
+  axios.get`https://api.nasa.gov/planetary/apod?api_key=Pf1VEatEAan8E7Z5KlsrXYRrqhYRlee1tkapvCzJ`
     .then(res => {
       // Copyright
       const copyright = res.data.copyright;
@@ -15,7 +12,7 @@ const APoD = () => {
 
       // Date
       const date = res.data.date;
-      const dateOutput = `<p id="jsDate" >Date: ${date}</p>`;
+      const dateOutput = `<p>${date}</p>`;
 
       // Explanation
       const explanation = res.data.explanation;
