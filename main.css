@@ -3,15 +3,14 @@
   margin: 0;
   color: #eaffff;
   font: 15px/1.5 Arial, Helvetica, sans-serif;
+  overflow: auto;
 }
 
 #Showcase {
-  background: url(./img/starryNight2.jpeg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: url(./img/starryNight2.jpeg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 #jsImage {
@@ -20,6 +19,7 @@
   max-width: 100%;
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   padding-top: 25px;
 }
 
